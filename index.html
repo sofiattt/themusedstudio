@@ -391,8 +391,7 @@ textarea.fi{resize:vertical;min-height:110px;}
 .jh{padding:60px 0 28px;border-bottom:1px solid var(--bl);}
 .jh p{font-family:var(--s);font-size:1.02rem;font-weight:300;font-style:italic;color:var(--ts);max-width:480px;margin-top:14px;line-height:1.75;}
 .jrn{padding:60px 0;border-bottom:1px solid var(--bl);}
-.jrn-i{display:grid;grid-template-columns:130px 1fr;gap:48px;padding:32px 0;border-top:1px solid var(--bl);align-items:start;cursor:pointer;transition:opacity .2s;}
-.jrn-i:hover{opacity:.72;}
+.jrn-i{display:grid;grid-template-columns:130px 1fr;gap:48px;padding:32px 0;border-top:1px solid var(--bl);align-items:start;cursor:default;}
 .jrn-i:first-child{border-top:1px solid var(--b);}
 .jrn-d{font-family:var(--n);font-size:.62rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--g);padding-top:6px;}
 .jrn-r{display:flex;flex-direction:column;}
@@ -404,7 +403,106 @@ textarea.fi{resize:vertical;min-height:110px;}
 .jrn-tag::after{content:'→';}
 .jrn-empty{padding:32px;background:var(--cream);border:1px dashed var(--b);font-family:var(--s);font-style:italic;color:var(--tm);text-align:center;font-size:.95rem;}
 
+/* ════ NIGERIA / INTERNATIONAL ════ */
+.ng-hero{padding:84px 0 70px;border-bottom:1px solid var(--bl);position:relative;overflow:hidden;background:var(--cream);}
+.ng-hero::before{content:'';position:absolute;top:0;right:-10%;width:55%;height:100%;background:radial-gradient(ellipse at center,rgba(168,123,79,.08) 0%,transparent 70%);pointer-events:none;}
+.ng-hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end;}
+.ng-eyebrow{font-family:var(--n);font-size:.58rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--g);display:flex;align-items:center;gap:12px;margin-bottom:28px;}
+.ng-eyebrow::before{content:'';width:30px;height:1px;background:var(--g);}
+.ng-h{font-family:var(--s);font-size:clamp(3rem,7vw,5.6rem);font-weight:400;line-height:.96;letter-spacing:-.02em;margin-bottom:24px;}
+.ng-h em{font-style:italic;font-weight:300;color:var(--ts);display:block;}
+.ng-sub{font-family:var(--s);font-size:clamp(1.05rem,1.6vw,1.25rem);font-weight:300;color:var(--ts);line-height:1.7;max-width:560px;margin-bottom:30px;}
+.ng-meta{font-family:var(--n);font-size:.62rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--tm);margin-bottom:14px;}
+.ng-meta-row{display:flex;flex-direction:column;gap:11px;padding-bottom:10px;}
+.ng-meta-item{font-family:var(--s);font-size:.96rem;font-weight:300;color:var(--ts);line-height:1.55;display:flex;gap:10px;align-items:flex-start;}
+.ng-meta-item::before{content:'+';color:var(--g);font-weight:400;flex-shrink:0;}
+.ng-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;}
+.ng-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bl);border-bottom:1px solid var(--bl);}
+.ng-sc{background:var(--cream);padding:42px 28px;}
+.ng-sn{font-family:var(--s);font-size:clamp(2.4rem,4vw,3.4rem);font-weight:400;line-height:1;margin-bottom:8px;}
+.ng-sn em{font-style:italic;font-weight:300;color:var(--g);}
+.ng-sl{font-family:var(--n);font-size:.62rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--tm);line-height:1.6;}
+.ng-prob{padding:78px 0;border-bottom:1px solid var(--bl);background:var(--w);}
+.ng-prob-h{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;margin-bottom:46px;align-items:start;}
+.ng-prob-t{font-family:var(--s);font-size:clamp(1.7rem,2.6vw,2.2rem);font-weight:400;line-height:1.18;}
+.ng-prob-t em{font-style:italic;font-weight:300;color:var(--ts);}
+.ng-prob-x{font-family:var(--s);font-size:1.02rem;font-weight:300;color:var(--ts);line-height:1.85;}
+.ng-prob-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bl);border:1px solid var(--bl);}
+.ng-prob-c{background:var(--cream);padding:32px 28px;}
+.ng-prob-n{font-family:var(--s);font-size:1.9rem;font-weight:300;color:var(--b);margin-bottom:12px;}
+.ng-prob-ct{font-family:var(--s);font-size:1.15rem;font-weight:500;margin-bottom:8px;}
+.ng-prob-cd{font-family:var(--n);font-size:.78rem;font-weight:300;color:var(--ts);line-height:1.78;}
+.ng-svc{padding:80px 0;border-bottom:1px solid var(--bl);}
+.ng-svc-h{margin-bottom:50px;}
+.ng-svc-l{display:flex;flex-direction:column;}
+.ng-svr{display:grid;grid-template-columns:80px 1fr 1.4fr;gap:42px;padding:36px 0;border-top:1px solid var(--bl);align-items:start;}
+.ng-svr:last-child{border-bottom:1px solid var(--bl);}
+.ng-svrn{font-family:var(--s);font-size:1rem;font-weight:300;color:var(--g);letter-spacing:.05em;padding-top:4px;}
+.ng-svrt{font-family:var(--s);font-size:1.55rem;font-weight:400;line-height:1.18;}
+.ng-svrt em{font-style:italic;font-weight:300;color:var(--ts);}
+.ng-svrx{font-family:var(--n);font-size:.82rem;font-weight:300;color:var(--ts);line-height:1.85;}
+.ng-svrx ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:8px;}
+.ng-svrx ul li{display:flex;gap:10px;align-items:flex-start;}
+.ng-svrx ul li::before{content:'·';color:var(--g);flex-shrink:0;font-weight:600;}
+.ng-proc{padding:78px 0;border-bottom:1px solid var(--bl);background:var(--cream);}
+.ng-proc-g{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bl);margin-top:42px;border:1px solid var(--bl);}
+.ng-proc-c{background:var(--cream);padding:30px 22px;display:flex;flex-direction:column;}
+.ng-proc-n{font-family:var(--s);font-size:.7rem;color:var(--g);letter-spacing:.18em;margin-bottom:10px;font-weight:400;}
+.ng-proc-t{font-family:var(--s);font-size:1.08rem;font-weight:500;margin-bottom:7px;line-height:1.25;}
+.ng-proc-d{font-family:var(--n);font-size:.72rem;font-weight:300;color:var(--ts);line-height:1.75;}
+.ng-tier{padding:80px 0;border-bottom:1px solid var(--bl);}
+.ng-tier-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px;}
+.ng-tc{background:var(--card);border:1px solid var(--bl);padding:36px 28px;display:flex;flex-direction:column;position:relative;transition:all .3s;}
+.ng-tc.feat{border-color:var(--g);background:var(--cream);}
+.ng-tc.feat::before{content:'Most Popular';position:absolute;top:-10px;left:28px;background:var(--g);color:var(--cl);font-family:var(--n);font-size:.55rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:5px 12px;}
+.ng-tc:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.06);}
+.ng-tcl{font-family:var(--n);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:11px;}
+.ng-tcn{font-family:var(--s);font-size:1.65rem;font-weight:400;margin-bottom:7px;}
+.ng-tcp{font-family:var(--s);font-size:1.85rem;font-weight:500;color:var(--t);margin-bottom:4px;}
+.ng-tcp .px{font-size:.65rem;font-family:var(--n);color:var(--tm);font-weight:400;letter-spacing:.12em;text-transform:uppercase;margin-left:4px;}
+.ng-tcb{font-family:var(--n);font-size:.7rem;font-weight:300;color:var(--tm);font-style:italic;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--bl);}
+.ng-tcf{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:24px;flex:1;}
+.ng-tcf li{font-family:var(--n);font-size:.78rem;font-weight:300;color:var(--ts);line-height:1.6;display:flex;gap:10px;align-items:flex-start;}
+.ng-tcf li::before{content:'→';color:var(--g);flex-shrink:0;}
+.ng-tier-note{font-family:var(--s);font-size:.92rem;font-weight:300;font-style:italic;color:var(--tm);margin-top:24px;text-align:center;line-height:1.7;}
+.ng-why{padding:76px 0;border-bottom:1px solid var(--bl);background:var(--w);}
+.ng-why-g{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start;}
+.ng-why-l{display:flex;flex-direction:column;gap:18px;}
+.ng-why-i{padding:18px 0;border-top:1px solid var(--bl);}
+.ng-why-i:last-child{border-bottom:1px solid var(--bl);}
+.ng-why-it{font-family:var(--s);font-size:1.05rem;font-weight:500;margin-bottom:5px;}
+.ng-why-id{font-family:var(--n);font-size:.78rem;font-weight:300;color:var(--ts);line-height:1.78;}
+.ng-trust{padding:76px 0;border-bottom:1px solid var(--bl);background:var(--cream);}
+.ng-trust-h{margin-bottom:36px;}
+.ng-trust-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.ng-trust-c{background:var(--card);border:1px solid var(--bl);padding:28px 26px;}
+.ng-trust-l{font-family:var(--n);font-size:.55rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:9px;}
+.ng-trust-t{font-family:var(--s);font-size:1.18rem;font-weight:500;margin-bottom:8px;}
+.ng-trust-d{font-family:var(--n);font-size:.76rem;font-weight:300;color:var(--ts);line-height:1.78;}
+.ng-faq{padding:76px 0;border-bottom:1px solid var(--bl);}
+.ng-faq-h{margin-bottom:32px;}
+.ng-faq-l{display:flex;flex-direction:column;}
+.ng-faq-i{border-top:1px solid var(--bl);padding:24px 0;}
+.ng-faq-i:last-child{border-bottom:1px solid var(--bl);}
+.ng-faq-q{font-family:var(--s);font-size:1.1rem;font-weight:500;margin-bottom:8px;}
+.ng-faq-a{font-family:var(--n);font-size:.83rem;font-weight:300;color:var(--ts);line-height:1.85;}
+.ng-final{padding:88px 0;background:var(--t);color:var(--cl);}
+.ng-final-g{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:center;}
+.ng-final-l{font-family:var(--n);font-size:.6rem;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:var(--gl);margin-bottom:18px;}
+.ng-final-h{font-family:var(--s);font-size:clamp(2rem,3.5vw,2.9rem);font-weight:400;line-height:1.12;margin-bottom:18px;}
+.ng-final-h em{font-style:italic;font-weight:300;color:var(--gp);}
+.ng-final-x{font-family:var(--s);font-size:1rem;font-weight:300;color:var(--gp);line-height:1.78;max-width:480px;}
+.ng-final-c{display:flex;flex-direction:column;gap:14px;}
+.ng-final-c .btn{background:var(--cl);color:var(--t);text-align:center;}
+.ng-final-c .btn:hover{background:var(--gp);}
+.ng-final-c .btn.bo{background:transparent;color:var(--cl);border:1px solid rgba(240,234,224,.35);}
+.ng-final-c .btn.bo:hover{border-color:var(--cl);background:transparent;}
+.ng-contact-info{margin-top:22px;padding-top:22px;border-top:1px solid rgba(240,234,224,.18);font-family:var(--n);font-size:.7rem;font-weight:300;color:var(--gp);letter-spacing:.05em;line-height:1.85;}
+.ng-contact-info a{color:var(--cl);border-bottom:1px solid rgba(240,234,224,.3);}
+.ng-contact-info a:hover{border-color:var(--cl);}
+
 /* RESPONSIVE */
+@media(max-width:900px){
   .nav{padding:0 20px;}.nav-links{display:none;}.hbg{display:flex;}
   .C{padding:0 20px;}
   .hero-title{font-size:clamp(3.5rem,15vw,7rem);}
@@ -435,6 +533,16 @@ textarea.fi{resize:vertical;min-height:110px;}
   .svr:hover{padding-left:8px;}
   .hero-video-section video{aspect-ratio:4/5;}
   .hero-video-section .vc-i{padding:32px 24px;}
+  .ng-hero-inner{grid-template-columns:1fr;gap:40px;}
+  .ng-stats{grid-template-columns:1fr 1fr;}
+  .ng-prob-h{grid-template-columns:1fr;gap:24px;}
+  .ng-prob-g{grid-template-columns:1fr;}
+  .ng-svr{grid-template-columns:1fr;gap:14px;padding:30px 0;}
+  .ng-proc-g{grid-template-columns:1fr 1fr;}
+  .ng-tier-g{grid-template-columns:1fr;}
+  .ng-why-g{grid-template-columns:1fr;gap:32px;}
+  .ng-trust-g{grid-template-columns:1fr;}
+  .ng-final-g{grid-template-columns:1fr;gap:34px;}
 }
 @media(max-width:600px){
   .hero-title{font-size:3.2rem;}
@@ -449,6 +557,11 @@ textarea.fi{resize:vertical;min-height:110px;}
   .proc-g{grid-template-columns:1fr;}
   .svr-l{flex-wrap:wrap;}
   .hero-video-section video{aspect-ratio:1/1;}
+  .ng-stats{grid-template-columns:1fr;}
+  .ng-proc-g{grid-template-columns:1fr;}
+  .ng-h{font-size:2.6rem;}
+  .ng-cta-row{flex-direction:column;align-items:stretch;}
+  .ng-cta-row .btn{text-align:center;}
 }
 </style>
 </head>
@@ -665,7 +778,6 @@ textarea.fi{resize:vertical;min-height:110px;}
         <div><div class="cssl">The Problem</div><p class="csst">Static brand systems are only half the story. Without a defined motion language, Lyfe's content was visually inconsistent and missing the emotional register the brand needed to land.</p></div>
         <div><div class="cssl">The Approach</div><p class="csst">We developed a motion identity from the ground up — easing, pacing, type behaviour, transition logic — then applied it across a suite of brand animations and social motion pieces designed to live across formats.</p></div>
         <div><div class="cssl">The Outcome</div><p class="csst">Motion that feels like the brand, not motion applied to it. Lyfe now has a moving identity system that scales across every channel without losing its voice.</p></div>
-        <div class="csv"><video controls muted loop playsinline preload="metadata"><source src="lyfe-motion.mp4" type="video/mp4"></video></div>
       </div>
     </div></div>
     <div class="cs" id="cs-t"><div class="csh" onclick="toggleCS('t')"><div class="csl"><span class="csn">07</span><h2 class="csna">Tasselle</h2></div><div class="csr"><span class="cstag">Brand World · Self-Initiated</span><div class="cstog">+</div></div></div>
@@ -808,7 +920,6 @@ textarea.fi{resize:vertical;min-height:110px;}
         <div class="jrn-c">Concept Case Study</div>
         <h3 class="jrn-t">Sòle — building a lifestyle hydration brand <em>from scratch in Nigeria</em></h3>
         <p class="jrn-x">A full brand strategy concept for an electrolyte brand positioned between daily ritual and quiet luxury. Twenty pages of positioning, market research, GTM strategy, and visual rationale — built around a single insight: in Nigerian wellness, the white space isn't in formulation. It's in brand. A ₦48M year-one opportunity hiding in a sachet.</p>
-        <span class="jrn-tag">Read the case study</span>
       </div>
     </div>
     <div class="jrn-i">
@@ -817,7 +928,6 @@ textarea.fi{resize:vertical;min-height:110px;}
         <div class="jrn-c">Process Note</div>
         <h3 class="jrn-t">Why we start with positioning, <em>not the logo</em></h3>
         <p class="jrn-x">Most founders come to us with what looks like a visual identity problem. The logo feels off. The colours don't sit right. Nine times out of ten, the visuals aren't the problem — they're the symptom. The brand hasn't decided what it stands for, who it's for, or why it exists in a way the work can be built on. Here's how we run a positioning audit before a single moodboard goes up.</p>
-        <span class="jrn-tag">Read the note</span>
       </div>
     </div>
     <div class="jrn-i">
@@ -826,7 +936,6 @@ textarea.fi{resize:vertical;min-height:110px;}
         <div class="jrn-c">Case Study</div>
         <h3 class="jrn-t">Blavetee — turning craftsmanship into <em>1.5M views</em></h3>
         <p class="jrn-x">When Blavetee came to us, the work was already exceptional — every piece a study in tailoring and intention. The gap was in how the brand spoke about it. We rebuilt the content strategy around the maker's POV: short, designer-led captions, behind-the-craft sequences, and a refined voice that let the product carry the weight. The numbers followed the clarity, not the other way round.</p>
-        <span class="jrn-tag">Read the case study</span>
       </div>
     </div>
     <div class="jrn-i">
@@ -835,7 +944,6 @@ textarea.fi{resize:vertical;min-height:110px;}
         <div class="jrn-c">Perspective</div>
         <h3 class="jrn-t">The Nigerian brand renaissance is <em>a positioning moment</em></h3>
         <p class="jrn-x">There's a generation of Nigerian brands building at a level the global market is finally paying attention to. But attention is fragile — and the brands that turn this moment into a decade are the ones investing in positioning, not just production. A few thoughts on what we're watching, what's working, and where the next layer of work needs to go.</p>
-        <span class="jrn-tag">Read the perspective</span>
       </div>
     </div>
   </div>
@@ -869,6 +977,270 @@ textarea.fi{resize:vertical;min-height:110px;}
   </div>
 </div>
 <footer class="ft"><div class="C"><div class="ft-i"><span class="ft-copy">© The Mused Studio</span><div class="ft-links"><a href="https://instagram.com/themusedstudio" target="_blank">Instagram</a><a href="mailto:hello@themusedstudio.com">hello@themusedstudio.com</a></div></div></div></footer>
+</div>
+
+<!-- ══ NIGERIA / INTERNATIONAL ══ -->
+<div id="page-nigeria" class="page">
+
+  <section class="ng-hero"><div class="C"><div class="ng-hero-inner">
+    <div>
+      <p class="ng-eyebrow">For International Brands · Lagos Market Entry</p>
+      <h1 class="ng-h">Your Lagos team. <em>Without the Lagos move.</em></h1>
+      <p class="ng-sub">We're the on-ground partner for international beauty, fashion, and lifestyle brands building presence in Nigeria. Influencer PR, dispatch, cultural localisation, and reporting: handled from Lagos, billed in USD, delivered to global standards.</p>
+      <div class="ng-cta-row">
+        <a class="btn bd" href="mailto:partnerships@themusedstudio.com?subject=Nigeria%20Market%20Entry%20Enquiry">Book a Discovery Call</a>
+        <a class="btn bo" href="mailto:partnerships@themusedstudio.com?subject=Capabilities%20Deck%20Request">Request Capabilities Deck</a>
+      </div>
+    </div>
+    <div>
+      <p class="ng-meta">For brands building in:</p>
+      <div class="ng-meta-row">
+        <p class="ng-meta-item">Beauty and skincare</p>
+        <p class="ng-meta-item">Fashion and lifestyle</p>
+        <p class="ng-meta-item">Wellness and consumer health</p>
+        <p class="ng-meta-item">Tech accessories and lifestyle gadgets</p>
+      </div>
+    </div>
+  </div></div></section>
+
+  <div class="ng-stats">
+    <div class="ng-sc"><div class="ng-sn">220<em>M</em>+</div><div class="ng-sl">Population<br>Largest in Africa</div></div>
+    <div class="ng-sc"><div class="ng-sn">60<em>%</em></div><div class="ng-sl">Under age 25<br>Median age 18</div></div>
+    <div class="ng-sc"><div class="ng-sn">#<em>1</em></div><div class="ng-sl">Beauty market<br>In West Africa</div></div>
+    <div class="ng-sc"><div class="ng-sn">75<em>M</em>+</div><div class="ng-sl">Active social media<br>Users in Nigeria</div></div>
+  </div>
+
+  <section class="ng-prob"><div class="C">
+    <div class="ng-prob-h">
+      <h2 class="ng-prob-t">Most foreign brands get Nigeria <em>wrong in three places.</em></h2>
+      <p class="ng-prob-x">It's not that the market doesn't want you. It's that the friction between your team in New York or London and the actual Lagos consumer is wider than it looks. Three things consistently break: logistics, creator vetting, and cultural fluency. We solve all three.</p>
+    </div>
+    <div class="ng-prob-g">
+      <div class="ng-prob-c"><div class="ng-prob-n">01</div><div class="ng-prob-ct">Logistics break.</div><div class="ng-prob-cd">Products held in customs. Lost in last-mile. Sent to wrong addresses by international couriers who don't understand Nigerian addressing. Campaigns delayed by weeks.</div></div>
+      <div class="ng-prob-c"><div class="ng-prob-n">02</div><div class="ng-prob-ct">Creator vetting fails.</div><div class="ng-prob-cd">Inflated follower counts. Bot engagement. Audiences in the wrong country. Brands pay creator fees and get nothing back because the audit was done from a desk in another time zone.</div></div>
+      <div class="ng-prob-c"><div class="ng-prob-n">03</div><div class="ng-prob-ct">Cultural fluency misses.</div><div class="ng-prob-cd">Captions that read fine in NYC but flat in Lagos. Trend timing that's two weeks behind. Tone that signals "imported" instead of "considered". Coverage that lands but doesn't convert.</div></div>
+    </div>
+  </div></section>
+
+  <section class="ng-svc"><div class="C">
+    <div class="ng-svc-h">
+      <p class="sl">What we do</p>
+      <h2 class="st">Four pillars. <em>One on-ground partner.</em></h2>
+    </div>
+    <div class="ng-svc-l">
+      <div class="ng-svr">
+        <div class="ng-svrn">01</div>
+        <div class="ng-svrt">Influencer Discovery <em>and Vetting</em></div>
+        <div class="ng-svrx">A curated, tiered creator database across beauty, fashion, lifestyle, wellness, and tech. Every creator vetted before recommendation.<ul><li>Engagement rate audits beyond surface metrics</li><li>Audience demographic verification (location, age, gender)</li><li>Brand-fit scoring against your positioning</li><li>Tier 1 to Tier 4 coverage (nano to macro)</li></ul></div>
+      </div>
+      <div class="ng-svr">
+        <div class="ng-svrn">02</div>
+        <div class="ng-svrt">Send-Out <em>and Logistics</em></div>
+        <div class="ng-svrx">You ship to our Lagos address. We handle everything from receipt to creator delivery, including custom packaging and brand inserts.<ul><li>Receiving, customs prep guidance, storage</li><li>Custom packaging and brand insert design</li><li>Vetted local courier dispatch (GIG, Kwik, DHL local)</li><li>Delivery confirmation and creator receipt acknowledgement</li></ul></div>
+      </div>
+      <div class="ng-svr">
+        <div class="ng-svrn">03</div>
+        <div class="ng-svrt">Coverage Tracking <em>and Reporting</em></div>
+        <div class="ng-svrx">Honest, transparent reporting. We don't inflate numbers and we don't promise posts we haven't seen.<ul><li>Daily monitoring across Instagram, TikTok, X</li><li>Story, reel, and post screen captures</li><li>Engagement metrics with context, not just totals</li><li>End-of-campaign report (PDF) with raw data appendix</li></ul></div>
+      </div>
+      <div class="ng-svr">
+        <div class="ng-svrn">04</div>
+        <div class="ng-svrt">Cultural Direction <em>and Strategy</em></div>
+        <div class="ng-svrx">Every send-out informed by brand strategy, not just logistics. This is what separates us from a freight forwarder.<ul><li>Caption and creator brief review for Lagos audience</li><li>Trend timing guidance for Naija TikTok and Instagram</li><li>Positioning audit before launch</li><li>Quarterly market intelligence updates (retainer only)</li></ul></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="ng-proc"><div class="C">
+    <div class="ng-svc-h">
+      <p class="sl">How it works</p>
+      <h2 class="st">From brief to report, <em>in five steps.</em></h2>
+    </div>
+    <div class="ng-proc-g">
+      <div class="ng-proc-c"><div class="ng-proc-n">Step 01</div><div class="ng-proc-t">Discovery Call</div><div class="ng-proc-d">30 minutes. Share your brand, goals, target creator profile, and timeline. We come back with a fit assessment within 48 hours.</div></div>
+      <div class="ng-proc-c"><div class="ng-proc-n">Step 02</div><div class="ng-proc-t">Strategy + Shortlist</div><div class="ng-proc-d">We deliver a creator shortlist with vetting notes, a campaign approach, packaging direction, and a logistics plan. Five business days.</div></div>
+      <div class="ng-proc-c"><div class="ng-proc-n">Step 03</div><div class="ng-proc-t">You Ship to Lagos</div><div class="ng-proc-d">We provide a pre-shipment guide for declarations and HS codes. Product arrives at our Lagos receiving address.</div></div>
+      <div class="ng-proc-c"><div class="ng-proc-n">Step 04</div><div class="ng-proc-t">Dispatch + Outreach</div><div class="ng-proc-d">Custom packaging applied. Couriers dispatched. Creator outreach managed. You see real-time progress in a shared tracker.</div></div>
+      <div class="ng-proc-c"><div class="ng-proc-n">Step 05</div><div class="ng-proc-t">Coverage Report</div><div class="ng-proc-d">Comprehensive end-of-campaign report. Posts captured, metrics analysed, lessons documented, next steps recommended.</div></div>
+    </div>
+  </div></section>
+
+  <section class="ng-tier"><div class="C">
+    <div class="ng-svc-h">
+      <p class="sl">Service tiers</p>
+      <h2 class="st">Three ways <em>to work with us.</em></h2>
+    </div>
+    <div class="ng-tier-g">
+      <div class="ng-tc">
+        <div class="ng-tcl">Tier 01</div>
+        <div class="ng-tcn">Pilot Send-Out</div>
+        <div class="ng-tcp">From $1,800 <span class="px">USD</span></div>
+        <div class="ng-tcb">Best for testing the Nigerian market with a single product or drop.</div>
+        <ul class="ng-tcf">
+          <li>8 to 12 vetted creators (one tier)</li>
+          <li>Custom packaging and brand insert</li>
+          <li>Dispatch and delivery confirmation</li>
+          <li>14-day coverage tracking</li>
+          <li>Final report with screen captures</li>
+          <li>One discovery call</li>
+        </ul>
+      </div>
+      <div class="ng-tc feat">
+        <div class="ng-tcl">Tier 02</div>
+        <div class="ng-tcn">Campaign Package</div>
+        <div class="ng-tcp">From $4,500 <span class="px">USD</span></div>
+        <div class="ng-tcb">Best for product launches, seasonal pushes, and announcement moments.</div>
+        <ul class="ng-tcf">
+          <li>20 to 30 creators across mixed tiers</li>
+          <li>Brand-fit creator strategy document</li>
+          <li>Custom packaging and brand insert</li>
+          <li>Dispatch and delivery confirmation</li>
+          <li>30-day coverage tracking</li>
+          <li>Final report and insights deck</li>
+          <li>Two strategy calls</li>
+          <li>Caption and brief review</li>
+        </ul>
+      </div>
+      <div class="ng-tc">
+        <div class="ng-tcl">Tier 03</div>
+        <div class="ng-tcn">Quarterly Retainer</div>
+        <div class="ng-tcp">From $3,500 <span class="px">USD / month</span></div>
+        <div class="ng-tcb">Best for brands committed to building presence in Nigeria long-term.</div>
+        <ul class="ng-tcf">
+          <li>Ongoing creator relationship management</li>
+          <li>Two monthly send-outs (size negotiated)</li>
+          <li>Database expansion and maintenance</li>
+          <li>Monthly performance reports</li>
+          <li>Quarterly market intelligence brief</li>
+          <li>Two strategy calls per month</li>
+          <li>Priority response time</li>
+        </ul>
+      </div>
+    </div>
+    <p class="ng-tier-note">Creator fees, where applicable, are billed separately at cost. We never mark up creator fees. Service fees cover strategy, dispatch, coordination, and reporting only.</p>
+  </div></section>
+
+  <section class="ng-why"><div class="C">
+    <div class="ng-svc-h">
+      <p class="sl">Why The Mused Studio</p>
+      <h2 class="st">Strategy-led PR. <em>Not just logistics.</em></h2>
+    </div>
+    <div class="ng-why-g">
+      <div>
+        <p style="font-family:var(--s);font-size:1.05rem;font-weight:300;color:var(--ts);line-height:1.85;">There are people in Lagos who can ship a box. There are fewer who can tell you whether the box should ship at all, what it should say when it lands, and which creator's audience will actually move when they post. That's the work we do.</p>
+      </div>
+      <div class="ng-why-l">
+        <div class="ng-why-i">
+          <div class="ng-why-it">Brand strategy is the foundation</div>
+          <div class="ng-why-id">Every send-out is filtered through positioning. We don't dispatch first and ask questions later.</div>
+        </div>
+        <div class="ng-why-i">
+          <div class="ng-why-it">Honest reporting, no inflated metrics</div>
+          <div class="ng-why-id">If a creator didn't post, we tell you. If engagement was thin, we tell you. PR built on inflated decks is PR that fails the second campaign.</div>
+        </div>
+        <div class="ng-why-i">
+          <div class="ng-why-it">USD-friendly billing infrastructure</div>
+          <div class="ng-why-id">Wise Business and Payoneer set up. No friction on payment, no hidden FX losses, clean invoicing for your finance team.</div>
+        </div>
+        <div class="ng-why-i">
+          <div class="ng-why-it">Creator fees billed at cost, never marked up</div>
+          <div class="ng-why-id">Our service fee is our service fee. What you pay creators is what creators receive. Full transparency in every report.</div>
+        </div>
+        <div class="ng-why-i">
+          <div class="ng-why-it">Single point of contact</div>
+          <div class="ng-why-id">You work with one person who knows your brand, not a rotating account team that re-learns your positioning every campaign.</div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="ng-trust"><div class="C">
+    <div class="ng-svc-h ng-trust-h">
+      <p class="sl">Studio credentials</p>
+      <h2 class="st">Built on a strategy practice. <em>Not a logistics service.</em></h2>
+    </div>
+    <div class="ng-trust-g">
+      <div class="ng-trust-c">
+        <div class="ng-trust-l">Brand Practice</div>
+        <div class="ng-trust-t">Lamithelabel</div>
+        <div class="ng-trust-d">Aje Collection launch campaign, Bumpa storefront build, and Flodesk email programme. Fashion brand strategy, creative direction, and digital execution.</div>
+      </div>
+      <div class="ng-trust-c">
+        <div class="ng-trust-l">Brand Practice</div>
+        <div class="ng-trust-t">Blaveetee</div>
+        <div class="ng-trust-d">Ongoing social media management and community building for emerging Nigerian fashion label. Strategy, content, and creator coordination.</div>
+      </div>
+      <div class="ng-trust-c">
+        <div class="ng-trust-l">Proprietary Methodology</div>
+        <div class="ng-trust-t">The Mused Brand Framework</div>
+        <div class="ng-trust-d">A 19-section AI-assisted brand strategy tool used internally and licensed to clients. Foundation, market intelligence, identity, growth.</div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="ng-faq"><div class="C">
+    <div class="ng-svc-h ng-faq-h">
+      <p class="sl">Common questions</p>
+      <h2 class="st">What you're <em>probably wondering.</em></h2>
+    </div>
+    <div class="ng-faq-l">
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">Do you guarantee creator posts?</div>
+        <div class="ng-faq-a">No. Reputable PR doesn't promise coverage. It promises the send, the relationship management, and a transparent report. If you need guaranteed posts, you're looking at paid placement, which we can also coordinate as a separate scope at a separate fee.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">How do you vet creators?</div>
+        <div class="ng-faq-a">Engagement rate audits beyond surface metrics, audience demographic checks (location, age, gender split), historical brand collaboration review, and a brand-fit scoring model. We avoid creators with bot followers, inflated reach, or audience profiles that don't match yours.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">What about Nigerian customs?</div>
+        <div class="ng-faq-a">For most beauty, fashion, and small electronics under common value thresholds, customs is straightforward. We provide a pre-shipment guide covering declarations, HS codes, recommended carriers, and best practices. We've supported clients through complex sends and high-value shipments.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">Who pays the creator fees?</div>
+        <div class="ng-faq-a">You do, billed separately at cost with full transparency. We never mark up creator fees. Some Tier 1 and 2 creators in Nigeria do charge fees on top of product, particularly for paid posts. We negotiate and structure these but the fee passes through to you unchanged.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">How long does a campaign take?</div>
+        <div class="ng-faq-a">Pilot Send-Out: 3 to 4 weeks from brief to final report. Campaign Package: 4 to 6 weeks. Quarterly Retainer: ongoing with monthly reporting cycles. Lead time depends on shipping origin and customs.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">How do payments work?</div>
+        <div class="ng-faq-a">USD invoicing via Wise Business or Payoneer. 50 percent on signed scope, 50 percent on report delivery for one-off campaigns. Monthly billing for retainers, due net 14. Creator fees invoiced separately when applicable.</div>
+      </div>
+      <div class="ng-faq-i">
+        <div class="ng-faq-q">Can you support entry beyond influencer PR?</div>
+        <div class="ng-faq-a">Yes. The Mused Studio is a full creative brand strategy practice. PR is one entry point. We also handle brand strategy, creative direction, motion content, and digital experience for international brands localising into Nigerian and African markets. Discuss in the discovery call.</div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="ng-final"><div class="C"><div class="ng-final-g">
+    <div>
+      <p class="ng-final-l">Ready when you are</p>
+      <h2 class="ng-final-h">Enter Nigeria <em>the right way.</em></h2>
+      <p class="ng-final-x">Brief us in 30 minutes. We'll come back within 48 hours with a fit assessment, recommended tier, and a path to first campaign.</p>
+    </div>
+    <div class="ng-final-c">
+      <a class="btn bd" href="mailto:partnerships@themusedstudio.com?subject=Nigeria%20Market%20Entry%20%E2%80%94%20Discovery%20Call">Book a Discovery Call</a>
+      <a class="btn bo" href="mailto:partnerships@themusedstudio.com?subject=Capabilities%20Deck%20Request">Request Capabilities Deck</a>
+      <div class="ng-contact-info">
+        <strong style="color:var(--cl);font-weight:500;">Direct:</strong><br>
+        <a href="mailto:partnerships@themusedstudio.com">partnerships@themusedstudio.com</a><br>
+        <a href="https://www.linkedin.com/in/sofiat-ambali" target="_blank">linkedin.com/in/sofiat-ambali</a><br>
+        Sofiat Ambali, Founder
+      </div>
+    </div>
+  </div></div></section>
+
+  <footer class="ft" style="background:var(--t);"><div class="C"><div class="ft-i">
+    <span class="ft-copy" style="color:var(--gp);">© The Mused Studio · Lagos, Nigeria</span>
+    <div class="ft-links">
+      <a style="color:var(--gp);" onclick="navigate('home')">Main Site</a>
+      <a style="color:var(--gp);" href="https://www.linkedin.com/in/sofiat-ambali" target="_blank">LinkedIn</a>
+      <a style="color:var(--gp);" href="mailto:partnerships@themusedstudio.com">partnerships@themusedstudio.com</a>
+    </div>
+  </div></div></footer>
 </div>
 
 <!-- ══ LINKS ══ -->
